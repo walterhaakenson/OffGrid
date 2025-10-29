@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makerzspace - Create. Share. Earn.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Landing Page -->
+    <div id="landingPage">
+        <!-- Hero Section -->
+        <div class="relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-90"></div>
+            <div class="relative max-w-7xl mx-auto px-6 py-24 text-center text-white">
+                <div class="inline-block mb-4 px-4 py-2 bg-white bg-opacity-20 rounded-full text-sm backdrop-blur-sm">
+                    🚀 Launching Soon - Join the Revolution
+                </div>
+                <h1 class="text-6xl font-bold mb-6 leading-tight">
+                    Create. Share. Earn.<br/>
+                    <span class="text-blue-200">Never Touch Manufacturing.</span>
+                </h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-50">
+                    The first social marketplace where your 3D designs become real products. We handle printing, shipping, and payments. You focus on creating.
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <button onclick="showPage('explore')" class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg hover:bg-blue-50 transition shadow-lg transform hover:scale-105">
+                        Explore Marketplace
+                    </button>
+                    <button class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition">
+                        Start Creating
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="max-w-7xl mx-auto px-6 -mt-12 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <svg class="w-12 h-12 mx-auto mb-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    <div class="text-3xl font-bold text-gray-900">1,000+</div>
+                    <div class="text-gray-600 mt-1">Creators Earning</div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <svg class="w-12 h-12 mx-auto mb-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                    </svg>
+                    <div class="text-3xl font-bold text-gray-900">25,000+</div>
+                    <div class="text-gray-600 mt-1">Products Shipped</div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <svg class="w-12 h-12 mx-auto mb-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                    </svg>
+                    <div class="text-3xl font-bold text-gray-900">$450</div>
+                    <div class="text-gray-600 mt-1">Avg. Monthly Earnings</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="max-w-7xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">How Makerzspace Works</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Upload Your Design</h3>
+                    <p class="text-gray-600">Share your 3D printable design. We verify it's printable and list it on the marketplace.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Customers Order</h3>
+                    <p class="text-gray-600">Shoppers discover and order your product. We print it with premium materials and ship it.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">You Earn Commission</h3>
+                    <p class="text-gray-600">Receive 30% commission on every sale. No inventory, no shipping, no hassle.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products Preview -->
+        <div class="bg-gray-50 py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-4 text-gray-900">Trending Designs</h2>
+                <p class="text-center text-gray-600 mb-12">Discover what creators are building</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="featuredProducts"></div>
+                <div class="text-center mt-12">
+                    <button onclick="showPage('explore')" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transition">
+                        View All Products
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-gradient-to-r from-blue-600 to-purple-600 py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center text-white">
+                <h2 class="text-4xl font-bold mb-6">Ready to Turn Your Ideas Into Income?</h2>
+                <p class="text-xl mb-8 text-blue-100">Join thousands of creators who are earning passive income from their designs.</p>
+                <button class="px-10 py-4 bg-white text-blue-600 rounded-lg font-bold text-lg hover:bg-blue-50 transition shadow-xl">
+                    Create Free Account
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Page -->
+    <div id="explorePage" class="hidden">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+                <h1 onclick="showPage('landing')" class="text-2xl font-bold gradient-text cursor-pointer">Makerzspace</h1>
+                <div class="flex-1 max-w-2xl mx-8">
+                    <div class="relative">
+                        <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        <input type="text" id="searchInput" placeholder="Search for products, creators, or categories..." class="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                    </svg>
+                    <div class="relative">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span id="cartCount" class="hidden absolute -top-2 -right-2 bg-blue-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="max-w-7xl mx-auto px-6 py-8">
+            <!-- Categories -->
+            <div class="flex gap-4 mb-8 overflow-x-auto pb-2">
+                <button class="px-6 py-2 bg-white rounded-full whitespace-nowrap hover:bg-blue-50 transition border border-gray-200">All</button>
+                <button class="px-6 py-2 bg-white rounded-full whitespace-nowrap hover:bg-blue-50 transition border border-gray-200">Tech Accessories</button>
+                <button class="px-6 py-2 bg-white rounded-full whitespace-nowrap hover:bg-blue-50 transition border border-gray-200">Organization</button>
+                <button class="px-6 py-2 bg-white rounded-full whitespace-nowrap hover:bg-blue-50 transition border border-gray-200">Home Decor</button>
+                <button class="px-6 py-2 bg-white rounded-full whitespace-nowrap hover:bg-blue-50 transition border border-gray-200">Gadgets</button>
+                <button class="px-6 py-2 bg-white rounded-full whitespace-nowrap hover:bg-blue-50 transition border border-gray-200">Tools</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8" id="productsGrid"></div>
+        </div>
+    </div>
+
+    <!-- Product Page -->
+    <div id="productPage" class="hidden">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-8">
+                    <h1 onclick="showPage('landing')" class="text-2xl font-bold gradient-text cursor-pointer">Makerzspace</h1>
+                    <button onclick="showPage('explore')" class="text-gray-600 hover:text-gray-900">← Back to Explore</button>
+                </div>
+                <div class="relative">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    <span id="cartCountProduct" class="hidden absolute -top-2 -right-2 bg-blue-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center"></span>
+                </div>
+            </div>
+        </nav>
+        <div id="productDetails" class="max-w-7xl mx-auto px-6 py-12"></div>
+    </div>
+
+    <!-- Creator Page -->
+    <div id="creatorPage" class="hidden">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-8">
+                    <h1 onclick="showPage('landing')" class="text-2xl font-bold gradient-text cursor-pointer">Makerzspace</h1>
+                    <button onclick="showPage('explore')" class="text-gray-600 hover:text-gray-900">← Back to Explore</button>
+                </div>
+                <div class="relative">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    <span id="cartCountCreator" class="hidden absolute -top-2 -right-2 bg-blue-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center"></span>
+                </div>
+            </div>
+        </nav>
+        <div id="creatorProfile"></div>
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <h2 class="text-2xl font-bold mb-8" id="creatorProductsTitle"></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="creatorProducts"></div>
+        </div>
+    </div>
+
+    <script>
+        const products = [
+            {
+                id: 1,
+                name: "Modular Desk Organizer",
+                creator: "Sarah Chen",
+                creatorId: "sarah",
+                price: 24.99,
+                rating: 4.8,
+                reviews: 127,
+                image: "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=400&h=400&fit=crop",
+                category: "Organization",
+                printTime: "8 hours",
+                likes: 342
+            },
+            {
+                id: 2,
+                name: "Ergonomic Phone Stand",
+                creator: "Mike Rodriguez",
+                creatorId: "mike",
+                price: 15.99,
+                rating: 4.9,
+                reviews: 203,
+                image: "https://images.unsplash.com/photo-1600087626014-e652e18bbff2?w=400&h=400&fit=crop",
+                category: "Tech Accessories",
+                printTime: "4 hours",
+                likes: 567
+            },
+            {
+                id: 3,
+                name: "Minimalist Plant Pot",
+                creator: "Emma Watson",
+                creatorId: "emma",
+                price: 18.50,
+                rating: 4.7,
+                reviews: 89,
+                image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop",
+                category: "Home Decor",
+                printTime: "6 hours",
+                likes: 421
+            },
+            {
+                id: 4,
+                name: "Cable Management Clips",
+                creator: "Sarah Chen",
+                creatorId: "sarah",
+                price: 9.99,
+                rating: 4.6,
+                reviews: 312,
+                image: "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400&h=400&fit=crop",
+                category: "Organization",
+                printTime: "2 hours",
+                likes: 234
+            },
+            {
+                id: 5,
+                name: "Adjustable Laptop Riser",
+                creator: "Mike Rodriguez",
+                creatorId: "mike",
+                price: 32.99,
+                rating: 4.9,
+                reviews: 178,
+                image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop",
+                category: "Tech Accessories",
+                printTime: "10 hours",
+                likes: 678
+            },
+            {
+                id: 6,
+                name: "Geometric Wall Art",
+                creator: "Emma Watson",
+                creatorId: "emma",
+                price: 28.00,
+                rating: 4.8,
+                reviews: 94,
+                image: "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=400&h=400&fit=crop",
+                category: "Home Decor",
+                printTime: "12 hours",
+                likes: 445
+            }
+        ];
+
+        const creators = {
+            sarah: {
+                name: "Sarah Chen",
+                bio: "Industrial designer specializing in functional everyday items",
+                followers: 1234,
+                designs: 23,
+                totalSales: 4521
+            },
+            mike: {
+                name: "Mike Rodriguez",
+                bio: "Tech enthusiast creating innovative gadget accessories",
+                followers: 2341,
+                designs: 18,
+                totalSales: 6783
+            },
+            emma: {
+                name: "Emma Watson",
+                bio: "Minimalist designer focused on sustainable home decor",
+                followers: 987,
+                designs: 15,
+                totalSales: 2134
+            }
+        };
+
+        const reviews = {
+            1: [
+                { user: "John D.", rating: 5, comment: "Perfect for my workspace! Quality print and fast shipping.", date: "2 weeks ago" },
+                { user: "Lisa M.", rating: 5, comment: "Love the modular design. Can customize it to my needs.", date: "1 month ago" },
+                { user: "Tom R.", rating: 4, comment: "Great product, slightly rough edges but overall satisfied.", date: "1 month ago" }
+            ]
+        };
+
+        let cartCount = 0;
+        let likedProducts = new Set();
+        let followedCreators = new Set();
+        let currentProduct = null;
+        let currentCreator = null;
+
+        function showPage(page) {
+            document.getElementById('landingPage').classList.add('hidden');
+            document.getElementById('explorePage').classList.add('hidden');
+            document.getElementById('productPage').classList.add('hidden');
+            document.getElementById('creatorPage').classList.add('hidden');
+
+            if (page === 'landing') {
+                document.getElementById('landingPage').classList.remove('hidden');
+                renderFeaturedProducts();
+            } else if (page === 'explore') {
+                document.getElementById('explorePage').classList.remove('hidden');
+                renderProducts();
+            } else if (page === 'product') {
+                document.getElementById('productPage').classList.remove('hidden');
+                renderProductDetails();
+            } else if (page === 'creator') {
+                document.getElementById('creatorPage').classList.remove('hidden');
+                renderCreatorProfile();
+            }
+        }
+
+        function renderFeaturedProducts() {
+            const container = document.getElementById('featuredProducts');
+            container.innerHTML = products.slice(0, 3).map(product => `
+                <div onclick="showProduct(${product.id})" class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer transform hover:scale-105">
+                    <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">${product.name}</h3>
+                        <p class="text-gray-600 text-sm mb-3">by ${product.creator}</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-blue-600">$${product.price}</span>
+                            <div class="flex items-center gap-1 text-sm text-gray-600">
+                                <svg class="w-4 h-4 fill-current text-yellow-400" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                ${product.rating}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderProducts() {
+            const container = document.getElementById('productsGrid');
+            const searchInput = document.getElementById('searchInput');
+            
+            searchInput.oninput = () => renderProducts();
+            
+            const query = searchInput.value.toLowerCase();
+            const filtered = query ? products.filter(p => 
+                p.name.toLowerCase().includes(query) ||
+                p.category.toLowerCase().includes(query) ||
+                p.creator.toLowerCase().includes(query)
+            ) : products;
+
+            container.innerHTML = filtered.map(product => `
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition cursor-pointer group">
+                    <div class="relative" onclick="showProduct(${product.id})">
+                        <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                        <button onclick="event.stopPropagation(); toggleLike(${product.id})" class="absolute top-3 right-3 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition">
+                            <svg class="w-5 h-5 ${likedProducts.has(product.id) ? 'fill-current text-red-500' : 'text-gray-600'}" fill="${likedProducts.has(product.id) ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-5" onclick="showProduct(${product.id})">
+                        <span class="text-xs text-gray-500 uppercase tracking-wide">${product.category}</span>
+                        <h3 class="font-bold text-lg mb-2 mt-1">${product.name}</h3>
+                        <div onclick="event.stopPropagation(); showCreator('${product.creatorId}')" class="text-sm text-gray-600 mb-3 hover:text-gray-900 cursor-pointer">
+                            by ${product.creator}
+                        </div>
+                        <div class="flex items-center gap-1 mb-4">
+                            <svg class="w-4 h-4 fill-current text-yellow-400" viewBox="0 0 20 20">
+                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                            </svg>
+                            <span class="font-semibold">${product.rating}</span>
+                            <span class="text-gray-500 text-sm">(${product.reviews})</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-blue-600">$${product.price}</span>
+                            <button onclick="event.stopPropagation(); addToCart()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm font-semibold">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderProductDetails() {
+            const product = products.find(p => p.id === currentProduct);
+            const productReviews = reviews[product.id] || [];
+            
+            document.getElementById('productDetails').innerHTML = `
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-white rounded-xl p-8 shadow-sm">
+                        <img src="${product.image}" alt="${product.name}" class="w-full rounded-lg mb-4">
+                        <div class="grid grid-cols-4 gap-4">
+                            ${[1,2,3,4].map(() => `
+                                <img src="${product.image}" alt="" class="w-full h-20 object-cover rounded-lg opacity-60 hover:opacity-100 cursor-pointer">
+                            `).join('')}
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-xl p-8 shadow-sm">
+                            <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm mb-4">${product.category}</span>
+                            <h1 class="text-3xl font-bold mb-4">${product.name}</h1>
+                            <div onclick="showCreator('${product.creatorId}')" class="flex items-center gap-2 mb-6 cursor-pointer text-gray-600 hover:text-gray-900">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                </svg>
+                                <span>by <span class="font-semibold">${product.creator}</span></span>
+                            </div>
+                            <div class="flex items-center gap-6 mb-6">
+                                <div class="flex items-center gap-1">
+                                    <svg class="w-5 h-5 fill-current text-yellow-400" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                    </svg>
+                                    <span class="font-bold">${product.rating}</span>
+                                    <span class="text-gray-500">(${product.reviews} reviews)</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-600">
+                                    <svg onclick="toggleLike(${product.id})" class="w-5 h-5 cursor-pointer ${likedProducts.has(product.id) ? 'fill-current text-red-500' : ''}" fill="${likedProducts.has(product.id) ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                    <span>${product.likes + (likedProducts.has(product.id) ? 1 : 0)}</span>
+                                </div>
+                            </div>
+                            <div class="border-t border-b py-6 mb-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-gray-600">Print Time</span>
+                                    <span class="font-semibold">${product.printTime}</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-600">Material</span>
+                                    <span class="font-semibold">PLA Premium</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 mb-6">
+                                <span class="text-4xl font-bold text-blue-600">${product.price}</span>
+                                <span class="text-gray-500">+ Free Shipping</span>
+                            </div>
+                            <button onclick="addToCart()" class="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-bold text-lg hover:shadow-lg transition">
+                                Add to Cart
+                            </button>
+                            <p class="text-gray-600 mt-6 leading-relaxed">
+                                A beautifully designed and highly functional ${product.name.toLowerCase()} that combines form and function. 
+                                3D printed with precision using high-quality materials. Perfect for ${product.category.toLowerCase()} needs.
+                            </p>
+                        </div>
+                        <div class="bg-white rounded-xl p-8 shadow-sm mt-6">
+                            <h2 class="text-2xl font-bold mb-6">Customer Reviews</h2>
+                            ${productReviews.length > 0 ? `
+                                <div class="space-y-6">
+                                    ${productReviews.map(review => `
+                                        <div class="border-b last:border-0 pb-6 last:pb-0">
+                                            <div class="flex items-center justify-between mb-2">
+                                                <span class="font-semibold">${review.user}</span>
+                                                <span class="text-sm text-gray-500">${review.date}</span>
+                                            </div>
+                                            <div class="flex items-center gap-1 mb-2">
+                                                ${[...Array(5)].map((_, i) => `
+                                                    <svg class="w-4 h-4 ${i < review.rating ? 'fill-current text-yellow-400' : 'text-gray-300'}" viewBox="0 0 20 20">
+                                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                                    </svg>
+                                                `).join('')}
+                                            </div>
+                                            <p class="text-gray-600">${review.comment}</p>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            ` : `
+                                <p class="text-gray-500">No reviews yet. Be the first to review this product!</p>
+                            `}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderCreatorProfile() {
+            const creator = creators[currentCreator];
+            const creatorProducts = products.filter(p => p.creatorId === currentCreator);
+            const isFollowing = followedCreators.has(currentCreator);
+
+            document.getElementById('creatorProfile').innerHTML = `
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+                    <div class="max-w-7xl mx-auto px-6">
+                        <div class="flex items-center gap-8">
+                            <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center">
+                                <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h1 class="text-4xl font-bold mb-2">${creator.name}</h1>
+                                <p class="text-xl text-blue-100 mb-4">${creator.bio}</p>
+                                <div class="flex gap-8 text-sm">
+                                    <div>
+                                        <div class="text-2xl font-bold">${creator.followers}</div>
+                                        <div class="text-blue-200">Followers</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-bold">${creator.designs}</div>
+                                        <div class="text-blue-200">Designs</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-bold">${creator.totalSales}</div>
+                                        <div class="text-blue-200">Total Sales</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="toggleFollow('${currentCreator}')" class="px-8 py-3 rounded-lg font-semibold transition ${isFollowing ? 'bg-white bg-opacity-20 hover:bg-opacity-30' : 'bg-white text-blue-600 hover:bg-blue-50'}">
+                                ${isFollowing ? 'Following' : 'Follow'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('creatorProductsTitle').textContent = `Designs by ${creator.name}`;
+            document.getElementById('creatorProducts').innerHTML = creatorProducts.map(product => `
+                <div onclick="showProduct(${product.id})" class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition cursor-pointer">
+                    <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">${product.name}</h3>
+                        <p class="text-gray-500 text-sm mb-4">${product.category}</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-blue-600">${product.price}</span>
+                            <div class="flex items-center gap-1 text-sm text-gray-600">
+                                <svg class="w-4 h-4 fill-current text-yellow-400" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                ${product.rating} (${product.reviews})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function showProduct(id) {
+            currentProduct = id;
+            showPage('product');
+        }
+
+        function showCreator(creatorId) {
+            currentCreator = creatorId;
+            showPage('creator');
+        }
+
+        function addToCart() {
+            cartCount++;
+            updateCartDisplay();
+            alert('Added to cart!');
+        }
+
+        function toggleLike(productId) {
+            if (likedProducts.has(productId)) {
+                likedProducts.delete(productId);
+            } else {
+                likedProducts.add(productId);
+            }
+            if (currentProduct === productId) {
+                renderProductDetails();
+            } else {
+                renderProducts();
+            }
+        }
+
+        function toggleFollow(creatorId) {
+            if (followedCreators.has(creatorId)) {
+                followedCreators.delete(creatorId);
+            } else {
+                followedCreators.add(creatorId);
+            }
+            renderCreatorProfile();
+        }
+
+        function updateCartDisplay() {
+            ['cartCount', 'cartCountProduct', 'cartCountCreator'].forEach(id => {
+                const el = document.getElementById(id);
+                if (cartCount > 0) {
+                    el.textContent = cartCount;
+                    el.classList.remove('hidden');
+                } else {
+                    el.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initialize
+        showPage('landing');
+    </script>
+</body>
+</html>
