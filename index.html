@@ -1282,7 +1282,7 @@
                 </div>
             `;
 
-            document.getElementById('creatorProductsTitle').textContent = `All Designs by ${creator.name} (${creatorProducts.length})`;
+            document.getElementById('creatorProductsTitle').textContent = `Available Designs by ${creator.name} (${creatorProducts.length})`;
             document.getElementById('creatorProducts').innerHTML = creatorProducts.map(product => `
                 <div onclick="showProduct(${product.id})" class="bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-purple-100 cursor-pointer card-hover">
                     <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
